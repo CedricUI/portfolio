@@ -1,0 +1,36 @@
+.skill{
+    /* border: 1px solid var(--red); */
+    border-radius: 10px;
+}
+.skill > summary{
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    background-color: var(--dark);
+    text-align: center;
+    color: var(--red);
+    padding: 3px;
+}
+
+.skill > ul{
+    margin: auto;
+    width: 300px;
+    background-color: var(--dark);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 0 4px var(--red);
+    li{
+        color: var(--white);
+        list-style: none;
+        padding: 7px;
+        border-bottom: 1px rgb(51, 46, 46) solid;
+    }
+    li:last-child{
+        border-bottom: none
+    }
+}
+details summary {
+  transition: margin 300ms ease-out;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}

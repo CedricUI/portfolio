@@ -9,45 +9,118 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/sections.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/slid.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
     <title>Portfolio Cédric</title>
 </head>
 <body>
-    <div class="conteiner-deco-border">
+    <header class="conteiner-deco-border">
         <div class="deco-border">test</div>
         <nav>
             <ul>
-                <a href="#project">
-                    <li>Projets</li>
-                </a>
-                <a href="#contact">
-                    <li>Contact</li>
-                </a>
-                <a href="#skills">
-                    <li>Compétences</li>
-                </a>
-                <a href="#about">
-                    <li>Á propos</li>
-                </a>
+                <li>
+                    <a href="#project">Projets</a>
+                </li>
+                <li >
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#skills">Compétences</a>
+                </li>
+                <li>
+                    <a href="#about">Á propos</a>
+                    </li>
             </ul>
         </nav>
-    </div>
+    </header>
     <h1>Portfolio</h1>
-    <div class="portfolio">
-        <section id="project" class="win-height">
+    <main class="portfolio">
+        <section id="project">
             <h2>Projets</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi necessitatibus nemo magnam quam accusantium repudiandae labore cupiditate consequatur? Officiis, doloribus error? In suscipit animi explicabo itaque fugit facilis, nesciunt veritatis.
-            </p>
+            <div class="slid">
+                <dl class="slid-list">
+                    <div>
+                        <dt class="slid-title">
+                            <a href="#">
+                                <figure>
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png" alt="projet1">
+                                    <figcaption>Titre du projet1</figcaption>
+                                </figure>
+                            </a>
+                        </dt>
+                        <dd class="slid-description">Description du projet1</dd>
+                    </div>
+                     <div>
+                        <dt class="slid-title">
+                            <a href="#">
+                                <figure>
+                                    <img src="https://static.wikia.nocookie.net/superman/images/8/84/Superman_flight_Secret_Origins_no6.png/revision/latest?cb=20210714170008" alt="projet2">
+                                    <figcaption>Titre du projet2</figcaption>
+                                </figure>
+                            </a>
+                        </dt>
+                        <dd class="slid-description">Description du projet2</dd>
+                    </div>
+                     <div>
+                        <dt class="slid-title">
+                            <a href="#">
+                                <figure>
+                                    <img src="https://www.franceinfo.fr/pictures/LUn9X08rx5klHnQgvCHPG0bWvzc/fit-in/720x/filters:format(jpg)/2019/04/12/hub_super01_cvr_1500_5b3e561f3788f5.51606704.jpg" alt="projet3">
+                                    <figcaption>Titre du projet3</figcaption>
+                                </figure>
+                            </a>
+                        </dt>
+                        <dd class="slid-description">Description du projet3</dd>
+                    </div>
+                </dl>
+            </div>
         </section>
-        <section id="contact" class="win-height">
+        <section id="contact">
             <h2>Contact</h2>
+            <address>
+              <a href="mailto:cedric.zone01@gmail.com">cedric.zone01@gmail.com</a><br />
+              <a href="tel:+33123456789">+33 (0)6 95 92 26 03</a>
+            </address>
         </section>
-        <section id="skills" class="win-height">
+        <section id="skills">
             <h2>Compétences</h2>
+            <details class="front skill" open>
+                <summary>Front</summary>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JS</li>
+                    <li>Vue.Js</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                </ul>
+            </details>
+            <details class="back skill">
+                <summary>Back</summary>
+                <ul>
+                    <li>Golang</li>
+                    <li>JAVA</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                </ul>
+            </details>
+            <details class="complementary skill">
+                <summary>Complémentaire</summary>
+                <ul>
+                    <li>Git</li>
+                    <li>Jira</li>
+                    <li>Confluence</li>
+                </ul>
+            </details>
         </section>
-        <section id="about" class="win-height">
+        <section id="about">
             <h2>Á propos</h2>
+            <p>En reconversion dans la programmation, je souhaite pouvoir développer des programmes pour faciliter la vie de l’être humain, et c’est pour cela que j’ai choisi l’école Zone01 pour me former dans le monde du développement. De plus, les valeurs de l’école sont axées sur l’entraide, la persévérance et le partage des connaissances, ce qui est à l’origine même du web.
+                <br><q>"Tout seul on va plus vite, ensemble, on va plus loin !"</q> 
+                -- Fred Brooks</p>
         </section>
-    </div>
+    </main>
 </body>
 </html>

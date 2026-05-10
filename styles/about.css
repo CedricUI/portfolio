@@ -1,0 +1,7 @@
+#about > p { 
+    width: 320px;
+    color: var(--white);
+    text-align: justify;
+    text-justify: auto;
+    margin-top: 20px;
+}

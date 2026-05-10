@@ -1,0 +1,34 @@
+.portfolio {
+  display: grid;
+  grid-template-areas:
+    "project"
+    "skills"
+    "about"
+    "contact";
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 90vh auto auto 1fr;
+  margin-bottom: 100px;
+  gap: 70px;
+}
+
+#project { 
+    grid-area: project;
+    /* border: 2px solid green; */
+}
+#contact { 
+    grid-area: contact; 
+    /* border: 2px solid rgb(128, 105, 0);  */
+}
+#skills { 
+    grid-area: skills; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#about { 
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

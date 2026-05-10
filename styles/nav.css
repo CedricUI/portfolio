@@ -6,7 +6,6 @@
 .deco-border{
     width: 100vw;
     height: 90px;
-    color: aliceblue;
     background-color: var(--dark);
     position: absolute;
     top: 0;
@@ -18,4 +17,10 @@
     rotate: 180deg;
     border-radius: 100%;
     box-shadow:  10px 5px 0 var(--white);
+}
+.conteiner-deco-border > nav > ul > li{
+    list-style: none;
+}
+.conteiner-deco-border > nav > ul > li > a {
+    color: aliceblue;
 }
