@@ -1,6 +1,6 @@
 .slid{
-    width: 331px;
-    height: 80vh;
+    width: var(--width-slid);
+    /* height: 70vh; */
     margin: auto;
     border-radius: 10px;
     background-color: var(--dark);
@@ -11,23 +11,30 @@
     display: flex;
     gap: 100px;
 }
+.slid-list > div{
+    padding-top: var(--padding-phone);
+    padding-bottom: var(--padding-phone);
+}
+.slid-title{
+    width: var(--width-slid);
+}
 .slid-title figure img{
     width: 100%;
-    height: 350px;
-    object-fit:cover;
+    height: 250px;
+    object-fit:contain;
     object-position: top;
 }
 .slid-title > a{
     text-decoration-line: none;
 }
 .slid-title figure > figcaption{
-    padding: 7px;
+    padding: 7px 10px 7px 0;
     text-align: center;
     font-weight: 900;
 }
 .slid-description{
-    width: 331px;
-    text-align: center;
+    width: calc(var(--width-slid) - 30px);
+    text-align:justify;
     padding: 7px;
     color: var(--white);
 }
