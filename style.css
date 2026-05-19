@@ -4,7 +4,8 @@
     --red-1:            #4d0507;
     --red-2:            #240203;
     --dark:             #222222;
-    --maging-phone:     20px 20px 0 20px;
+    --maging-phone:     2%;
+    --padding-phone:    4%;
 }
 *{
     box-sizing: border-box;
