@@ -1,5 +1,4 @@
 .skill{
-    /* border: 1px solid var(--red); */
     border-radius: 10px;
 }
 .skill > summary{
@@ -17,6 +16,7 @@
     background-color: var(--dark);
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0 0 4px var(--red);
+
     li{
         color: var(--white);
         list-style: none;
@@ -27,10 +27,10 @@
         border-bottom: none
     }
 }
-details summary {
-  transition: margin 300ms ease-out;
-}
 
 details[open] summary {
   margin-bottom: 10px;
+  border-bottom: 3px ridge red;
+  box-shadow: 0 3px 10px red;
+  transition: box-shadow 300ms ease, margin 300ms ease;
 }

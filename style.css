@@ -6,7 +6,8 @@
     --dark:             #222222;
     --maging-phone:     2%;
     --padding-phone:    4%;
-    --width-slid:       331px;
+    --width-mobile:       331px;
+    --width-tablette: 631px;
     --margin-h2:        20px;
 }
 *{
@@ -59,7 +60,9 @@ nav{
         }
     }
 }
-
+details {
+    width: 331px;;
+}
 section{
     margin: var(--maging-phone);
     h2{
@@ -73,7 +76,5 @@ section{
 
 /* Tablette */
 @media (768px <= width <= 1200px) {
-    :root{
-        --width-slid: 631px;
-    }
+    
 }

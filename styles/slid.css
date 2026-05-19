@@ -1,6 +1,5 @@
 .slid{
-    width: var(--width-slid);
-    /* height: 70vh; */
+    width: var(--width-mobile);
     margin: auto;
     border-radius: 10px;
     background-color: var(--dark);
@@ -16,7 +15,7 @@
     padding-bottom: var(--padding-phone);
 }
 .slid-title{
-    width: var(--width-slid);
+    width: var(--width-mobile);
 }
 .slid-title figure img{
     width: 100%;
@@ -33,7 +32,7 @@
     font-weight: 900;
 }
 .slid-description{
-    width: calc(var(--width-slid) - 30px);
+    width: calc(var(--width-mobile) - 30px);
     text-align:justify;
     padding: 7px;
     color: var(--white);

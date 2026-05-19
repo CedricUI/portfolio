@@ -3,6 +3,7 @@
   grid-template-areas:
     "project"
     "skills"
+    "soft"
     "about"
     "contact";
 
@@ -28,9 +29,13 @@
     grid-area: skills; 
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     padding: var(--padding-phone);
 }
 #about { 
     grid-area: about;
+}
+#soft{
+    grid-area: soft;
 }
