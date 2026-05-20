@@ -1,0 +1,18 @@
+/* Tablette */
+@media (768px <= width <= 1200px) {
+ .portfolio {
+        /* display: grid; */
+        grid-template-areas:
+          "project project"
+          "skills soft"
+          "about about"
+          "contact contact";
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+  #skills {
+       padding: 0;
+   }
+}

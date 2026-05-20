@@ -1,0 +1,6 @@
+/* Tablette */
+@media (768px <= width <= 1200px) {
+    #about > p {
+        width: var(--width-tablette);
+    }
+}

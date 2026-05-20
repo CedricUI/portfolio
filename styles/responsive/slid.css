@@ -1,0 +1,16 @@
+/* Tablette */
+@media (768px <= width <= 1200px) {
+     .slid {
+        width: var(--width-tablette);
+        margin: auto;
+    }
+    .slid-title figure img{
+        object-fit: contain;
+    }
+    .slid-title{
+        width: var(--width-tablette);
+    }
+    .slid-description{
+        width: calc(var(--width-tablette) - 30px);
+    }
+}
