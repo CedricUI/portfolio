@@ -1,0 +1,7 @@
+@media (1200px <= width) {
+    #soft > h2 {
+        margin: 0;
+        position: absolute;
+        top: 10px;
+    }
+}

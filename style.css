@@ -6,8 +6,9 @@
     --dark:             #222222;
     --maging-phone:     2%;
     --padding-phone:    4%;
-    --width-mobile:       331px;
-    --width-tablette: 631px;
+    --width-mobile:     331px;
+    --width-tablette:   631px;
+    --width-desktop:    550px;
     --margin-h2:        20px;
 }
 *{
@@ -29,6 +30,7 @@ body{
     font-optical-sizing: auto;
     font-weight:400;
     font-style: normal;
+
 }
 h1{
     position: absolute;
@@ -37,6 +39,7 @@ h1{
 }
 h2 {
     margin: 20px;
+    /* visibility: hidden; */
 }
 nav{
     width: 100%;

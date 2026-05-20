@@ -4,3 +4,12 @@
         width: var(--width-tablette);
     }
 }
+/* Desktop */
+@media (1200px <= width) {
+    #about {
+        justify-content: center;
+    }
+    #about > p {
+        text-align: start;
+    }
+}

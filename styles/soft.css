@@ -1,16 +1,23 @@
-#soft > img {
+#soft > div {
+    position: relative;
+    bottom: 10%;
+    z-index: -2;
+}
+#soft > h2 {
+    z-index: -1;
+}
+#soft > div > img {
     width: 300px;
     height: 300px;
     border-radius: 100%;
     mix-blend-mode:color-burn;
-    object-fit: scale-down;
+    object-fit:contain;
     object-position: top;
     margin: 45px 0;
-    filter:contrast(8);
-    box-shadow: 0px 15px 0px rgb(0, 0, 0);
-    z-index: -1;
+    filter:saturate(0%) contrast(175%) drop-shadow(5px -5px 20px var(--red));
+    box-shadow: 0px 15px 0px var(--white);
 }
-#soft > ul {
+#soft > div > ul {
     width: var(--width-mobile);
     height: 300px;
     background-size: contain;
@@ -18,14 +25,15 @@
     position: absolute;
     top: 53%; left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 0;
 
      li:nth-child(1), li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5){
         position: absolute;
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
         border-radius: 100%;
-        background-color: var(--dark);
+        background-color: rgba(0, 0, 0, 0.797);
+        backdrop-filter: blur(5px);
      }
 
     li {
@@ -38,7 +46,8 @@
         gap: 7px;
         color: var(--white);
         font-weight: 500;
-        opacity: .6;
+        z-index: 0;
+        font-size: .7em;
     } 
 
     li:nth-child(1) {
@@ -52,7 +61,7 @@
     }
 
     li:nth-child(3) {
-        top: 0; left: 50%;
+        bottom: -40%; left: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -69,6 +78,5 @@
 
 #soft svg {
     fill: var(--white);
-;
 }
 
