@@ -4,7 +4,18 @@
     --red-1:            #4d0507;
     --red-2:            #240203;
     --dark:             #222222;
-    --maging-phone:     2%;
+    --go-color:         #028aac;
+    --html-color:       #db5618;
+    --css-color:        #2938e0;
+    --js-color:         #dbce18;
+    --go-bg-color:      #00323f;
+    --html-bg-color:    #521f08;
+    --css-bg-color:     #0e1353;
+    --js-bg-color:      #353206;
+    --go-sdw-color:     0 0 3px #028aac;
+    --html-sdw-color:   0 -1px 3px #ac4f02;
+    --css-sdw-color:    1px 0 3px #2938e0;
+    --js-sdw-color:     0 0 3px #dbce18;
     --padding-phone:    4%;
     --width-mobile:     331px;
     --width-tablette:   631px;
@@ -77,7 +88,26 @@ section{
     }
 }
 
-/* Tablette */
-/* @media (768px <= width <= 1200px) {
-    
-} */
+[role="tooltip"] {
+  visibility: hidden;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  /* Laisser un délai avant de masquer pour que la souris puisse quitter le
+  champ et entrer dans l'info-bulle */
+  transition: visibility 0.5s;
+}
+[aria-describedby]:hover,
+[aria-describedby]:focus {
+  position: relative;
+}
+[aria-describedby]:hover + [role="tooltip"],
+[aria-describedby]:focus + [role="tooltip"],
+[role="tooltip"]:hover,
+[role="tooltip"]:focus {
+  visibility: visible;
+}
