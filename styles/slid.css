@@ -10,7 +10,7 @@
     display: flex;
     gap: 100px;
 }
-.slid-list > div{
+.slid-list div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,32 +19,41 @@
 }
 .slid-title{
     width: var(--width-mobile);
+}.slid-title figure {
+    padding: 10px;
 }
 .slid-title figure img{
     width: 100%;
     height: 250px;
     object-fit:contain;
     object-position: top;
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 5px;
+    padding: 10px;
 }
-.slid-title > a{
+.slid-title > a {
     text-decoration-line: none;
 }
-.slid-title figure > figcaption{
+.slid-title figure > figcaption {
     padding: 7px 10px 7px 0;
     text-align: center;
     font-weight: 900;
+    text-transform: uppercase;
 }
-.slid-description{
+.slid-description {
     width: calc(var(--width-mobile) - 30px);
     text-align:justify;
     padding: 7px;
     color: var(--white);
 }
-.slid-description div:first-child{
+.slid-description > div:first-child{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+    position: relative;
     
-    >span {
+    > span {
         position: absolute;
         visibility: hidden;
         z-index: -12;
@@ -76,21 +85,27 @@
             box-shadow: var(--html-sdw-color), var(--css-sdw-color);
             background: linear-gradient(124deg, var(--html-bg-color), var(--css-bg-color));
 
-            >span:first-child{
+            > span:first-child{
                 color: var(--html-color);
             }
 
-            >span:last-child{
+            > span:last-child{
                 color: var(--css-color);
             }
         }
 
         .javaScript{
-            border-color: #dbce18;
+            border-color: var(--js-color);
             color: var(--js-color);
-
             box-shadow: var(--js-sdw-color);
             background: var(--js-bg-color);
+        }
+
+        .sqlite{
+            border-color: #275ca0;
+            color: var(--sqlite-color);
+            box-shadow: var(--sqlite-sdw-color);
+            background: var(--sqlite-bg-color);
         }
     }
 }

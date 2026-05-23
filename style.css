@@ -1,26 +1,29 @@
 :root{
-    --white:            #e0c7c8;
-    --red:              #b30d0f;
-    --red-1:            #4d0507;
-    --red-2:            #240203;
-    --dark:             #222222;
-    --go-color:         #028aac;
-    --html-color:       #db5618;
-    --css-color:        #2938e0;
-    --js-color:         #dbce18;
-    --go-bg-color:      #00323f;
-    --html-bg-color:    #521f08;
-    --css-bg-color:     #0e1353;
-    --js-bg-color:      #353206;
-    --go-sdw-color:     0 0 3px #028aac;
-    --html-sdw-color:   0 -1px 3px #ac4f02;
-    --css-sdw-color:    1px 0 3px #2938e0;
-    --js-sdw-color:     0 0 3px #dbce18;
-    --padding-phone:    4%;
-    --width-mobile:     331px;
-    --width-tablette:   631px;
-    --width-desktop:    550px;
-    --margin-h2:        20px;
+    --white:                 #e0c7c8;
+    --red:                   #b30d0f;
+    --red-1:                 #4d0507;
+    --red-2:                 #240203;
+    --dark:                  #222222;
+    --go-color:              #028aac;
+    --html-color:            #db5618;
+    --css-color:             #2938e0;
+    --js-color:              #dbce18;
+    --sqlite-color:          #275ca0;
+    --go-bg-color:           #00323f;
+    --html-bg-color:         #521f08;
+    --css-bg-color:          #0e1353;
+    --js-bg-color:           #353206;
+    --sqlite-bg-color:       #0a1d36;
+    --go-sdw-color:          0 0 3px #028aac;
+    --html-sdw-color:        0 -1px 3px #ac4f02;
+    --css-sdw-color:         1px 0 3px #2938e0;
+    --js-sdw-color:          0 0 3px #dbce18;
+    --sqlite-sdw-color:      0 0 3px #275ca0;
+    --padding-phone:         4%;
+    --width-mobile:          331px;
+    --width-tablette:        631px;
+    --width-desktop:         550px;
+    --margin-h2:             20px;
 }
 *{
     box-sizing: border-box;
@@ -60,16 +63,19 @@ nav{
     background-color: var(--dark);
     align-items: center;
     border-radius:  50% 50% 0 0;
-    ul{
+    
+    >ul{
         width: 100%;
         display:flex;
         justify-content: space-evenly;
         gap: 10px;
-        a{
-            text-decoration: none;
-            li{
-                color: var(--white);
-                list-style: none;
+         
+        >li{
+            color: var(--white);
+            list-style: none;
+                 
+            >a{
+                text-decoration: none;
             }
         }
     }
