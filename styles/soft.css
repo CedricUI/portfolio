@@ -1,10 +1,6 @@
 #soft > div {
     position: relative;
     bottom: 10%;
-    z-index: -2;
-}
-#soft > h2 {
-    z-index: -1;
 }
 #soft > div > img {
     width: 300px;

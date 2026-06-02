@@ -1,11 +1,11 @@
 /* Tablette */
-@media (768px <= width <= 1200px) {
+@media (768px <= width <= 1100px) {
     #about > p {
         width: var(--width-tablette);
     }
 }
 /* Desktop */
-@media (1200px <= width) {
+@media (1100px < width) {
     #about {
         justify-content: center;
     }

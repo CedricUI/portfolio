@@ -37,9 +37,14 @@
 }
 .slid-title figure > figcaption {
     padding: 7px 10px 7px 0;
+    margin: 10px 0;
     text-align: center;
     font-weight: 900;
     text-transform: uppercase;
+    outline: 1px red solid;
+    border-radius: 5px;
+    background-color: var(--red-1);
+    color: var(--red);
 }
 .slid-description {
     width: calc(var(--width-mobile) - 30px);

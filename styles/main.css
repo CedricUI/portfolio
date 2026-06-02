@@ -6,9 +6,9 @@
     "soft"
     "about"
     "contact";
-
   grid-template-columns: 1fr;
   margin-bottom: 100px;
+  margin-top: 20px;
   gap: 25px;
 }
 #project, #about, #skills, #soft{
@@ -20,8 +20,8 @@
     grid-area: project;
     justify-self: center;
 }
-#contact { 
-    grid-area: contact; 
+#contact {
+    grid-area: contact;
 }
 #skills { 
     grid-area: skills;
@@ -34,4 +34,5 @@
 #soft{
     grid-area: soft;
     position: relative;
+    z-index:-2;
 }

@@ -1,4 +1,4 @@
-@media (1200px <= width) {
+@media (1100px < width) {
     #soft > h2 {
         margin: 0;
         position: absolute;
