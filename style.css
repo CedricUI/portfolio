@@ -46,11 +46,11 @@ body{
     font-style: normal;
 
 }
-h1{
+/* h1{
     position: absolute;
     top: 0;
     right: 100%;
-}
+} */
 h2 {
     margin: 20px;
 }
@@ -84,12 +84,7 @@ details {
 }
 section{
     margin: var(--maging-phone);
-    
-    
-    
-    
-    
-    
+
     h2{
         font-family: "Russo One", sans-serif;
         font-weight: 400;
@@ -99,7 +94,16 @@ section{
     }
 }
 
-[role="tooltip"] {
+address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+address > a{
+    color: var(--white);
+}
+
+/* [role="tooltip"] {
   visibility: hidden;
   position: absolute;
   top: 2rem;
@@ -110,7 +114,7 @@ section{
   border-radius: 0.25rem;
   /* Laisser un délai avant de masquer pour que la souris puisse quitter le
   champ et entrer dans l'info-bulle */
-  transition: visibility 0.5s;
+  /*transition: visibility 0.5s;
 }
 [aria-describedby]:hover,
 [aria-describedby]:focus {
@@ -121,4 +125,4 @@ section{
 [role="tooltip"]:hover,
 [role="tooltip"]:focus {
   visibility: visible;
-}
+} */

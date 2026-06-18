@@ -1,0 +1,35 @@
+#pop-up{
+    height: 100vh;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.815);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    color: var(--white);
+
+}
+
+.close-btn{
+    width: 35px;
+    height: 35px;
+    background-image: url("../asset/img/png/cancel_35dp_B30D0F_FILL0_wght400_GRAD0_opsz40.png");
+    background-size:contain;
+    background-color: transparent;
+    border-radius: 100%;
+    align-self: flex-end;
+    order: -1;
+}
+#pop-up > p:last-of-type{
+    font-weight: 100;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+#pop-up span{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
