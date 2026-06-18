@@ -1,17 +1,25 @@
-#pop-up{
-    height: 100vh;
-    padding: 4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+#pop-up {
+     height: 100vh;
+     padding: 4%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     background-color: rgba(0, 0, 0, 0.817);
+     backdrop-filter: blur(14px);
+    }
+.pop-up{
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.815);
-    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 100vw;
+    background:  url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHVpdnJ2bDE2bzM1MzRnaDBlb2pzandvNGRxYnAxcjVxaHl1Y3A3bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/APq0WQXgQQrKFcBbjP/giphy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
     z-index: 10;
     color: var(--white);
-
 }
 
 .close-btn{
@@ -33,3 +41,4 @@
 #pop-up span{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
