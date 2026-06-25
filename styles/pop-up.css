@@ -1,4 +1,4 @@
-#pop-up {
+.pop-up {
      height: 100vh;
      padding: 4%;
      display: flex;
@@ -8,7 +8,7 @@
      background-color: rgba(0, 0, 0, 0.817);
      backdrop-filter: blur(14px);
     }
-.pop-up{
+.background-pop-up{
     position: fixed;
     top: 0;
     height: 100vh;

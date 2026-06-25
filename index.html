@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=simulation?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=groups" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/sections.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/slid.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -23,6 +22,7 @@
     <link rel="stylesheet" href="styles/responsive/about.css">
     <link rel="stylesheet" href="styles/responsive/soft.css">
     <title>Portfolio Cédric</title>
+    <script type="module" src="./main.js"></script>
 </head>
 <body>
     <header class="conteiner-deco-border">
@@ -44,10 +44,10 @@
             </ul>
         </nav>
     </header>
-    <div class="background pop-up">
-        <section id="pop-up">
+    <div class="background-pop-up" id="pop-up-intro">
+        <section class="pop-up">
             <h1>Mon univers</h1>
-            <button class="close-btn" aria-label="fermeture de la pop-up"></button>
+            <button class="close-btn" id="pop-up-close" aria-label="fermeture de la pop-up"></button>
            <p>
                 Bonjour à vous qui venez découvrir mon portfolio.<br>
                 Mon portfolio est conçu pour être simple à comprendre tout en donnant un maximum d'informations sur mes créations et sur qui je suis.<br>
