@@ -10,8 +10,9 @@
     animation-bande 3s ease-in-out;
 }
 @keyframes animation-info {
-  from {background-color: red}
-  to {background-color: yellow}
+ 0% {background-color: var(--yellow);}
+  50% {background-color: red}
+  100% {background-color: yellow}
 }
 @keyframes animation-bande {
     from {

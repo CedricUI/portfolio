@@ -1,3 +1,4 @@
+
 .pop-up {
      height: 100vh;
      padding: 10% 4%;
@@ -7,13 +8,24 @@
      align-items: center;
      gap: 10px;
      background-color: rgba(0, 0, 0, 0.817);
-     backdrop-filter: blur(14px);
+     backdrop-filter: blur(0px);
+     animation: animate-pop-up 10s linear 0s 1 normal forwards;
      >p{
-        max-width: 600px;
-        width: 90%;
-        text-align:justify;
+         color: azure;
+         max-width: 600px;
+         width: 90%;
+         text-align:justify;
      }
     }
+
+@keyframes animate-pop-up{
+  from {
+    backdrop-filter: blur(0px);
+}
+  to {
+    backdrop-filter: blur(14px);
+}
+}
 .background-pop-up{
     position: fixed;
     top: 0;
@@ -37,15 +49,20 @@
     border-radius: 100%;
     align-self: flex-end;
     order: -1;
-    rotate: 0;
-    animation: animation-btn 20s ease-in-out 10s infinite alternate forwards;
+    rotate: 0; opacity: 0;
+    animation: animation-btn 20s ease-in-out 10s infinite alternate both;
+    animation: animation-btn-visibility 10s ease-in-out 5s 1 normal forwards;
 }
 @keyframes animation-btn{
-  0% {rotate: 0;}
-  5% {rotate: calc(180deg * 3);}
-  50% {rotate: calc(180deg * 3);}
-  55% {rotate: calc(-360deg * 3);}
-  100% {rotate: calc(-360deg * 3);}
+    0% {rotate: 0;}
+    5% {rotate: calc(180deg * 3);}
+    50% {rotate: calc(180deg * 3);}
+    55% {rotate: calc(-360deg * 3);}
+    100% {rotate: calc(-360deg * 3);}
+}
+@keyframes animation-btn-visibility {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 @media (1100px < width) {
     .close-btn{
@@ -64,3 +81,21 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.pop-up > h1 {
+    color: rgb(191, 191, 191);
+}
+.pop-up >h1, .pop-up >p, .pop-up >span, .pop-up >address{
+    opacity: 0;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    animation: animation-text 10s ease-in-out 5s 1 normal forwards;
+}
+@keyframes animation-text {
+    from {
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+        opacity: 0;
+    }
+    to {
+        text-shadow: 0px 0px 0px rgb(255, 255, 255);
+        opacity: 1;
+    }
+}
