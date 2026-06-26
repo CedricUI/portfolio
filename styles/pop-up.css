@@ -37,6 +37,15 @@
     border-radius: 100%;
     align-self: flex-end;
     order: -1;
+    rotate: 0;
+    animation: animation-btn 20s ease-in-out 10s infinite alternate forwards;
+}
+@keyframes animation-btn{
+  0% {rotate: 0;}
+  5% {rotate: calc(180deg * 3);}
+  50% {rotate: calc(180deg * 3);}
+  55% {rotate: calc(-360deg * 3);}
+  100% {rotate: calc(-360deg * 3);}
 }
 @media (1100px < width) {
     .close-btn{

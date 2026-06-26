@@ -6,7 +6,7 @@ const div = document.createElement('div')
 div.className = 'info'
 
 const p = document.createElement('p')
-p.textContent = "Mon portfolioi est en cours..."
+p.textContent = "Mon portfolio est en cours..."
 
 div.prepend(p)
 

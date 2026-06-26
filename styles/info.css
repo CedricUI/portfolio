@@ -4,5 +4,22 @@
     background-color: var(--yellow);
     position: absolute;
     top: 0;
-    color: var(--dark)
+    color: var(--dark);
+    animation: 
+    animation-info 10s linear 3s infinite alternate,
+    animation-bande 3s ease-in-out;
+}
+@keyframes animation-info {
+  from {background-color: red}
+  to {background-color: yellow}
+}
+@keyframes animation-bande {
+    from {
+        translate: 100% 0;
+        opacity: 0%;
+    }
+    to {
+        translate: 0 0;
+        opacity: 100%;
+    }
 }
