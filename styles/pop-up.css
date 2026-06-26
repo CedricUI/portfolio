@@ -1,6 +1,5 @@
-
 .pop-up {
-     height: 100vh;
+    height: 100vh;
      padding: 10% 4%;
      display: flex;
      flex-direction: column;
@@ -39,7 +38,6 @@
     z-index: 10;
     color: var(--white);
 }
-
 .close-btn{
     width: 35px;
     height: 35px;
@@ -50,8 +48,9 @@
     align-self: flex-end;
     order: -1;
     rotate: 0; opacity: 0;
-    animation: animation-btn 20s ease-in-out 10s infinite alternate both;
-    animation: animation-btn-visibility 10s ease-in-out 5s 1 normal forwards;
+    animation: 
+        animation-btn 20s ease-in-out 10s infinite alternate both,
+        animation-btn-visibility 10s ease-in-out 5s 1 normal forwards;
 }
 @keyframes animation-btn{
     0% {rotate: 0;}
@@ -87,7 +86,7 @@
 .pop-up >h1, .pop-up >p, .pop-up >span, .pop-up >address{
     opacity: 0;
     text-shadow: 0px 0px 10px rgb(255, 255, 255);
-    animation: animation-text 10s ease-in-out 5s 1 normal forwards;
+    animation: animation-text 5s ease-in-out 2s 1 normal forwards;
 }
 @keyframes animation-text {
     from {
