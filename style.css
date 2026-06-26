@@ -4,6 +4,7 @@
     --red-1:                 #4d0507;
     --red-2:                 #240203;
     --dark:                  #222222;
+    --yellow:                rgb(213, 154, 37);
     --go-color:              #028aac;
     --html-color:            #db5618;
     --css-color:             #2938e0;
@@ -46,11 +47,12 @@ body{
     font-style: normal;
 
 }
-/* h1{
-    position: absolute;
-    top: 0;
-    right: 100%;
-} */
+h1, h2{
+    font-family: "Russo One", sans-serif;
+}
+h1{
+    text-transform: capitalize;
+}
 h2 {
     margin: 20px;
 }
@@ -86,7 +88,6 @@ section{
     margin: var(--maging-phone);
 
     h2{
-        font-family: "Russo One", sans-serif;
         font-weight: 400;
         font-style: normal;
         text-align: center;

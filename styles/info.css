@@ -1,0 +1,8 @@
+.info{
+    width: 100%;
+    padding: 7px;
+    background-color: var(--yellow);
+    position: absolute;
+    top: 0;
+    color: var(--dark)
+}

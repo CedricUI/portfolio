@@ -1,4 +1,3 @@
-
 export function closeBtn(idBtn, idClose){
 
     if (idClose === undefined || idClose === null && idClose === undefined || idClose === null) {
