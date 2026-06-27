@@ -5,10 +5,12 @@ export function closeBtn(idBtn, idClose, effect){
     }
     
     idBtn.addEventListener("click", () =>{
-
         if (typeof effect === "function"){
             effect(idClose)
-            idClose.style.transform = "translateY(1000000000px)"
+            const display = () =>{
+                idClose.style.display = "none"
+            }
+            setTimeout(display, 5000);
         }else if (
             typeof effect === "number" ||
             typeof effect === "string" ||
@@ -20,6 +22,5 @@ export function closeBtn(idBtn, idClose, effect){
         }
 
         document.body.style.overflow = ""
-
     })
 }
