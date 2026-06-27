@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Développeur passionné, je conçois des expériences web modernes, performantes et intuitives avec un souci du détail et de l’impact utilisateur." />
+    
     <link rel="icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="favicon.png" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Russo+One&display=swap" rel="stylesheet">
-
 
     <link rel="stylesheet" href="styles/effect/effect.css">
     
@@ -23,16 +23,20 @@
     <link rel="stylesheet" href="styles/soft.css">
     <link rel="stylesheet" href="styles/pop-up.css">
     <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/light.css">
+
     <link rel="stylesheet" href="styles/responsive/main.css">
     <link rel="stylesheet" href="styles/responsive/slid.css">
     <link rel="stylesheet" href="styles/responsive/about.css">
     <link rel="stylesheet" href="styles/responsive/soft.css">
+    
     <title>Portfolio Cédric</title>
     <script type="module" src="./main.js"></script>
 </head>
 <body>
+   
     <header class="conteiner-deco-border">
-        <div class="deco-border">test</div>
+        <div class="deco-border"></div>
         <nav>
             <ul>
                 <li>
@@ -51,10 +55,9 @@
         </nav>
     </header>
     <div class="background-pop-up" id="pop-up-intro">
-        <section class="pop-up">
+        <section class="pop-up" aria-describedby="pop-up qui introduit le portfolio">
             <h1>Mon univers</h1>
-            <button class="close-btn" id="pop-up-close" aria-label="fermeture de la pop-up"></button>
-           <p>
+            <p>
                 Bonjour à vous qui venez découvrir mon portfolio.
                 Mon portfolio est conçu pour être simple à comprendre tout en donnant un maximum d'informations sur mes créations et sur qui je suis
                 C'est-à-dire une personne simple qui aime les choses simples. Mais rendre quelque chose de simple n'est pas forcément facile.
@@ -62,9 +65,10 @@
                 Vous ne trouverez pas ici un portfolio avec une tonne d'informations et de pages différentes.<br>
             </p>
             <p>Merci et bonne visite&nbsp!</p>
-             <address>
+            <address>
                 <span>M. Cédric BOUCHER</span> – <a href="mailto:cedric.zone01@gmail.com">Contact</a>
             </address>
+            <button class="close-btn" id="pop-up-close" aria-describedby="bouton de fermeture de la pop-up"></button>
         </section>
     </div>
     <main class="portfolio">
@@ -206,5 +210,7 @@
                 -- Fred Brooks</p>
         </section>
     </main>
+    <div class="light">limière</div>
 </body>
+     
 </html>
