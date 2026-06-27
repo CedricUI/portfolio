@@ -1,4 +1,5 @@
 .disappearance {
     opacity: 0;
-    transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out,
+        transform 0s linear 900ms;
 }
