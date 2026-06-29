@@ -1,0 +1,352 @@
+/* .light{
+    height:2100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #88af246e;
+    filter : blur(14px);
+    z-index: -2;
+} */
+
+/* .light{
+    height:10px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    box-shadow:
+        0px -5px 5px #c2e0e4,
+        5px 0px 5px #d2f2f0, 
+        -5px 0px 5px white, 
+        0px 5px 5px #ffffff;
+    border-radius: 50%;
+    background: conic-gradient(#c3cdea, #dfedf4, #edecff, #ffffff, #d2d2de);
+    scale: .5;
+    opacity: .7;
+} */
+
+
+/* ==========================
+   BACKGROUND ÉTOILÉ
+   Fond transparent
+   ========================== */
+
+/* ==========================
+   ESPACE
+========================== */
+
+.space{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    background:transparent;
+    z-index:-3;
+    opacity: .7;
+}
+
+
+/* ==========================
+   BACKGROUND ÉTOILÉ
+   Fond transparent
+   ========================== */
+
+.stars {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: transparent;
+    z-index: -1;
+}
+
+/* Couche 1 : petites étoiles */
+.stars::before,
+.stars::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: repeat;
+    animation: twinkle 8s ease-in-out infinite alternate;
+}
+
+/* Petites étoiles */
+.stars::before {
+    background-image:
+        radial-gradient(circle, #ffffff 1px, transparent 1.5px),
+        radial-gradient(circle, #d7ecff 1.5px, transparent 2px),
+        radial-gradient(circle, #ffffff 2px, transparent 2.5px),
+        radial-gradient(circle, #b7dfff 1px, transparent 1.5px);
+
+    background-size:
+        220px 220px,
+        340px 340px,
+        470px 470px,
+        620px 620px;
+
+    background-position:
+        20px 30px,
+        140px 190px,
+        300px 100px,
+        480px 260px;
+
+    opacity: .9;
+}
+
+/* Grandes étoiles */
+.stars::after {
+    background-image:
+        radial-gradient(circle, #ffffff 3px, transparent 4px),
+        radial-gradient(circle, #cbe7ff 2.5px, transparent 3.5px),
+        radial-gradient(circle, #ffffff 2px, transparent 3px),
+        radial-gradient(circle, #b5ddff 3px, transparent 4px);
+
+    background-size:
+        700px 700px,
+        900px 900px,
+        1200px 1200px,
+        1500px 1500px;
+
+    background-position:
+        80px 120px,
+        420px 350px,
+        700px 250px,
+        1050px 500px;
+
+    animation-duration: 12s;
+    opacity: .75;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: .45;
+        transform: scale(1);
+        filter: drop-shadow(0 0 2px rgba(255,255,255,.3));
+    }
+
+    50% {
+        opacity: 1;
+        filter: drop-shadow(0 0 6px rgba(180,220,255,.8));
+    }
+
+    100% {
+        opacity: .6;
+        transform: scale(1.01);
+        filter: drop-shadow(0 0 3px rgba(255,255,255,.4));
+    }
+}
+
+
+
+
+
+/* ==========================
+   PLANÈTES
+========================== */
+
+.planet{
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle at 30% 30%,
+            #ffffff,
+            #eef8ff 45%,
+            #b7dcff 80%,
+            rgba(183,220,255,.1));
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.9),
+        0 0 35px rgba(180,220,255,.6);
+
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+
+}
+
+/* Petite planète */
+
+.orbit1{
+
+    width:18px;
+    height:18px;
+
+    animation:
+        orbit1 50s linear infinite;
+
+}
+
+/* Moyenne planète */
+
+.orbit2{
+
+    width:35px;
+    height:35px;
+
+    animation:
+        orbit2 80s linear infinite reverse;
+
+}
+
+/* Grande planète */
+
+.orbit3{
+
+    width:55px;
+    height:55px;
+
+    animation:
+        orbit3 120s linear infinite;
+
+}
+
+/* ==========================
+   ORBITES
+========================== */
+
+@keyframes orbit1{
+
+    from{
+        transform:
+            rotate(0deg)
+            translateX(45vw)
+            rotate(0deg);
+    }
+
+    to{
+        transform:
+            rotate(360deg)
+            translateX(45vw)
+            rotate(-360deg);
+    }
+
+}
+
+@keyframes orbit2{
+
+    from{
+        transform:
+            rotate(0deg)
+            translateX(60vw)
+            rotate(0deg);
+    }
+
+    to{
+        transform:
+            rotate(360deg)
+            translateX(60vw)
+            rotate(-360deg);
+    }
+
+}
+
+@keyframes orbit3{
+
+    from{
+        transform:
+            rotate(0deg)
+            translateX(75vw)
+            rotate(0deg);
+    }
+
+    to{
+        transform:
+            rotate(360deg)
+            translateX(75vw)
+            rotate(-360deg);
+    }
+
+}
+
+/*==========================
+    ÉTOILES FILANTES
+==========================*/
+
+#shooting-stars{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+}
+
+/* Une étoile */
+
+.shooting-star{
+
+    position:absolute;
+
+    width:3px;
+    height:3px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+        0 0 6px #fff,
+        0 0 15px #9ed8ff,
+        0 0 30px #9ed8ff;
+
+}
+
+/* Traînée */
+
+.shooting-star::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-140px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:140px;
+    height:2px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(170,220,255,.15),
+        rgba(220,240,255,.8),
+        white
+    );
+
+    border-radius:5px;
+
+}
+
+@keyframes shooting{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translate(0,0)
+            scale(.8);
+
+    }
+
+    10%{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:
+            translate(var(--dx),var(--dy))
+            scale(1);
+
+    }
+
+}
