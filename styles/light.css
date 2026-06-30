@@ -241,69 +241,71 @@
     ÉTOILES FILANTES
 ==========================*/
 
+/*=========================
+    ETOILES FILANTES
+=========================*/
+
 #shooting-stars{
     position:absolute;
     inset:0;
     overflow:hidden;
 }
 
-/* Une étoile */
-
 .shooting-star{
 
     position:absolute;
 
-    width:3px;
-    height:3px;
+    width:6px;
+    height:6px;
 
     border-radius:50%;
-
-    background:white;
+    background:#fff;
 
     box-shadow:
-        0 0 6px #fff,
-        0 0 15px #9ed8ff,
-        0 0 30px #9ed8ff;
+        0 0 8px #fff,
+        0 0 20px #bfe8ff,
+        0 0 40px #8fd6ff;
+
+    animation:shoot linear forwards;
 
 }
 
 /* Traînée */
 
-.shooting-star::after{
+.shooting-star::before{
 
     content:"";
 
     position:absolute;
 
-    left:-140px;
+    right:100%;
     top:50%;
+
+    width:150px;
+    height:2px;
 
     transform:translateY(-50%);
 
-    width:140px;
-    height:2px;
-
     background:linear-gradient(
-        to right,
-        transparent,
-        rgba(170,220,255,.15),
-        rgba(220,240,255,.8),
-        white
+        to left,
+        white,
+        rgba(180,220,255,.8),
+        rgba(180,220,255,.3),
+        transparent
     );
 
-    border-radius:5px;
+    border-radius:10px;
 
 }
 
-@keyframes shooting{
+@keyframes shoot{
 
     from{
 
         opacity:0;
 
         transform:
-            translate(0,0)
-            scale(.8);
+            translate(0,0);
 
     }
 
@@ -318,8 +320,7 @@
         opacity:0;
 
         transform:
-            translate(var(--dx),var(--dy))
-            scale(1);
+            translate(var(--dx),var(--dy));
 
     }
 

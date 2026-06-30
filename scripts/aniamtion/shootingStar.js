@@ -1,72 +1,66 @@
-const container = document.getElementById("shooting-stars");
+// function createStar(){
 
-function createStar(){
+//     const container = document.getElementById("shooting-stars");
 
-    const star = document.createElement("div");
+//     if(!container) return;
 
-    star.className = "shooting-star";
+//     const star = document.createElement("div");
 
-    //-----------------------------------
-    // Position aléatoire
-    //-----------------------------------
+//     star.className = "shooting-star";
 
-    const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight;
+//     //------------------------------------
+//     // Position de départ
+//     //------------------------------------
 
-    star.style.left = `${x}px`;
-    star.style.top = `${y}px`;
+//     const x = Math.random()*window.innerWidth;
+//     const y = Math.random()*window.innerHeight;
 
-    //-----------------------------------
-    // Direction aléatoire
-    //-----------------------------------
+//     star.style.left = x+"px";
+//     star.style.top = y+"px";
 
-    const angle = Math.random() * Math.PI * 2;
+//     //------------------------------------
+//     // Direction aléatoire
+//     //------------------------------------
 
-    const distance = 700;
+//     const angle = Math.random()*Math.PI*2;
 
-    const dx = Math.cos(angle) * distance;
-    const dy = Math.sin(angle) * distance;
+//     const distance = 800;
 
-    star.style.setProperty("--dx", `${dx}px`);
-    star.style.setProperty("--dy", `${dy}px`);
+//     const dx = Math.cos(angle)*distance;
+//     const dy = Math.sin(angle)*distance;
 
-    //-----------------------------------
-    // Orientation de la traînée
-    //-----------------------------------
+//     star.style.setProperty("--dx",dx+"px");
+//     star.style.setProperty("--dy",dy+"px");
 
-    star.style.transform = `rotate(${angle}rad)`;
+//     //------------------------------------
+//     // Oriente la traînée
+//     //------------------------------------
 
-    //-----------------------------------
-    // Animation
-    //-----------------------------------
+//     star.style.rotate = angle+"rad";
 
-    const duration = 1200 + Math.random()*600;
+//     //------------------------------------
 
-    star.style.animation =
-        `shooting ${duration}ms linear forwards`;
+//     const duration = 1200+Math.random()*600;
 
-    container.appendChild(star);
+//     star.style.animationDuration = duration+"ms";
 
-    setTimeout(()=>{
+//     container.appendChild(star);
 
-        star.remove();
+//     setTimeout(()=>{
 
-    },duration);
+//         star.remove();
 
-}
+//     },duration);
 
-export  function launchStars(){
+// }
 
-    createStar();
+// export function launchStars(){
+//     createStar();
+//     setTimeout(createStar,500);
+//     setTimeout(createStar,1000);
+// }
+// // première salve
+// // launchStars();
 
-    setTimeout(createStar,700);
-
-    setTimeout(createStar,1400);
-
-}
-
-// Première salve
-// launchStars();
-
-// Puis toutes les 3 minutes
-// setInterval(launchStars,180000);
+// // // puis toutes les 3 min
+// // setInterval(launchStars,180000);
