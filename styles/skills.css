@@ -1,5 +1,6 @@
 .skill{
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 .skill > summary{
     border: 1px solid var(--red);

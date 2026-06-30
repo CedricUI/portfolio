@@ -1,7 +1,10 @@
 import { domElement } from './scripts/config/domElements.js'
 import { popUpButton } from './scripts/utils/popUpButton.js'
 import { infoBulle } from './scripts/maintenance.js'
-import { effect } from "./scripts/effects/effect.js"
+import { effect } from './scripts/effects/effect.js'
+import { projects } from './scripts/slids.js'
+import { skills } from './scripts/skills.js'
+
 // import { launchStars } from "./scripts/aniamtion/shootingStar.js";
 
 
@@ -15,3 +18,4 @@ infoBulle
 // launchStars();
 
 // setInterval(launchStars,180000);
+

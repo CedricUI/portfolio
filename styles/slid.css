@@ -78,28 +78,28 @@
             font-weight: 300;
         }
 
-        .go {
+        .go, .wordpress {
             border-color: var(--go-color); 
             color: var(--go-color);
             background-color: var(--go-bg-color);
             box-shadow: var(--go-sdw-color);
         }
 
-        .html-css{
-            border-color: var(--html-color) var(--css-color) var(--css-color) var(--html-color);
-            box-shadow: var(--html-sdw-color), var(--css-sdw-color);
-            background: linear-gradient(124deg, var(--html-bg-color), var(--css-bg-color));
-
-            > span:first-child{
-                color: var(--html-color);
-            }
-
-            > span:last-child{
-                color: var(--css-color);
-            }
+        .html{
+            border-color: var(--html-color);
+            box-shadow: var(--html-sdw-color);
+            background-color: var(--html-bg-color);
+            color: var(--html-color);
+        }
+        
+        .css{
+            border-color: var(--css-color);
+            box-shadow: var(--css-sdw-color);
+            background-color: var(--css-bg-color);
+            color: var(--css-color);
         }
 
-        .javaScript{
+        .js{
             border-color: var(--js-color);
             color: var(--js-color);
             box-shadow: var(--js-sdw-color);
@@ -107,7 +107,7 @@
         }
 
         .sqlite{
-            border-color: #275ca0;
+            border-color: var(--sqlite-color);
             color: var(--sqlite-color);
             box-shadow: var(--sqlite-sdw-color);
             background: var(--sqlite-bg-color);
