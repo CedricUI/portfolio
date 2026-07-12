@@ -9,7 +9,7 @@ slides[0].innerHTML = projects.map(project => `
         <dt class="slid-title">
             <a href="${project.link}">
                 <figure>
-                    <img src="${project.image}" alt="${project.title}" loading="lazy" decoding="async">
+                    <img src="${project.image}" alt="${project.title}" width="331" height="250" loading="lazy" decoding="async">
                     <figcaption>${project.title}</figcaption>
                 </figure>
             </a>

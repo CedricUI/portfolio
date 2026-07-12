@@ -5,10 +5,12 @@
     background-color: var(--dark);
     box-shadow: 0px 0 10px red;
     overflow-y: hidden;
+    min-height: 520px;
 }
 .slid-list{
     display: flex;
     gap: 100px;
+    min-height: 520px;
 }
 .slid-list div{
     display: flex;
