@@ -237,6 +237,32 @@
 
 }
 
+@media (max-width: 900px), (prefers-reduced-motion: reduce) {
+    .stars::before,
+    .stars::after {
+        animation: none !important;
+    }
+
+    .planet {
+        animation: none !important;
+    }
+
+    .orbit1 {
+        animation: none !important;
+        transform: rotate(0deg) translateX(45vw) rotate(0deg);
+    }
+
+    .orbit2 {
+        animation: none !important;
+        transform: rotate(0deg) translateX(60vw) rotate(0deg);
+    }
+
+    .orbit3 {
+        animation: none !important;
+        transform: rotate(0deg) translateX(75vw) rotate(0deg);
+    }
+}
+
 /*==========================
     ÉTOILES FILANTES
 ==========================*/
