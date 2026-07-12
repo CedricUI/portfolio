@@ -2,7 +2,7 @@
 export const skills = [
         {class:"front skill", summary:"Front", skills:["HTML/CSS", "JS", "Vue.Js", "Angular", "React"]},
         {class:"back skill", summary:"Back", skills:["Golang", "JAVA", "PHP", "Laravel"]},
-            {class:"database skill", summary:"Database", skills:["MangoDB", "MySQL"]},
+        {class:"database skill", summary:"Database", skills:["MangoDB", "MySQL"]},
         {class:"complementary skill", summary:"Complémentaire", skills:["Git", "Jira", "Confluence", "Méthodologie Agile","Docker"]},
     ]
 const skillsHTML = skills.map(skill => {

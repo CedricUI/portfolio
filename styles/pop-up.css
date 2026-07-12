@@ -7,8 +7,8 @@
      align-items: center;
      gap: 10px;
      background-color: rgba(0, 0, 0, 0.817);
-     backdrop-filter: blur(0px);
-     animation: animate-pop-up 10s linear 0s 1 normal forwards;
+         backdrop-filter: none;
+         animation: animate-pop-up 0.8s ease-in-out 0s 1 normal forwards;
      >p{
          color: azure;
          max-width: 600px;
@@ -18,12 +18,14 @@
     }
 
 @keyframes animate-pop-up{
-  from {
-    backdrop-filter: blur(0px);
-}
-  to {
-    backdrop-filter: blur(14px);
-}
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .background-pop-up{
     position: fixed;
@@ -47,7 +49,6 @@
     border-radius: 100%;
     align-self: flex-end;
     order: -1;
-    rotate: 0; opacity: 0;
     animation: 
         animation-btn 20s ease-in-out 10s infinite alternate both,
         animation-btn-visibility 10s ease-in-out 4s 1 normal forwards;
@@ -67,6 +68,21 @@
     .close-btn{
        position: relative;
        right: 20%;
+    }
+}
+
+@media (max-width: 900px), (prefers-reduced-motion: reduce) {
+    .background-pop-up {
+        background-attachment: scroll;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    .pop-up {
+        backdrop-filter: none;
+        animation: none;
+    }
+    .close-btn {
+        animation: animation-btn-visibility 0.5s ease-in-out 0s 1 normal forwards;
     }
 }
 .pop-up > p:last-of-type{

@@ -15,6 +15,7 @@ popUpButton(domElement.popUpCloseBtn, domElement.popUpIntro, effect.disappearanc
 infoBulle
 
 
+
 // launchStars();
 
 // setInterval(launchStars,180000);
