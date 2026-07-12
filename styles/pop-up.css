@@ -48,6 +48,7 @@
     background-color: transparent;
     border-radius: 100%;
     align-self: flex-end;
+    opacity: 0;
     order: -1;
     animation: 
         animation-btn 20s ease-in-out 10s infinite alternate both,

@@ -1,5 +1,11 @@
 /* Tablette */
 @media (768px <= width <= 1100px) {
+    #flex-sild{
+        width: 90vw;
+        padding: 20px;
+        background-color:var(--red);
+        border-radius: 10px;
+    }
      .slid {
         width: var(--width-tablette);
         margin: auto;
@@ -12,6 +18,25 @@
     }
     .slid-description{
         width: calc(var(--width-tablette) - 30px);
+    }
+    #flex-sild{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+    #flex-sild > menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-projects{
+        display: inline;
+        background-color : green;
+        border-radius: 5px;
+        padding: 3px 6px;
+    }
+    .btn-projects:hover{
+        background-color : #0a270a;
     }
 }
 /* Desktop */
