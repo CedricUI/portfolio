@@ -41,7 +41,8 @@ for (let index = 0; index < projects.length ; index++) {
 }
 flexSild.append(menu)
 
-if (window.innerWidth >= 768 && window.innerWidth  <= 1100){
+if (window.innerWidth >= 768 && window.innerWidth <= 1100){
+    console.log("window.innerWidth", window.innerWidth)
 
     btnProjects[0].addEventListener("click", () => {
         slid[0].scrollTo({
