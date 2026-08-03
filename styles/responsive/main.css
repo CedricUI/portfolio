@@ -4,8 +4,7 @@
    grid-template-areas:
    "project project"
    "skills soft"
-   "about about"
-   "contact contact";
+   "about contact";
    grid-template-columns: auto;
    gap: 20px;
    }

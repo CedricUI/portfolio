@@ -6,4 +6,5 @@ export const domElement = {
     slid : document.getElementsByClassName('slid'),
     flexSild : document.getElementById('flex-sild'),
     btnProjects : document.getElementsByClassName('btn-projects'),
+    softLi : document.querySelectorAll('#soft > div > ul > li'),
 }

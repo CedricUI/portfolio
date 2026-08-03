@@ -10,6 +10,7 @@
         justify-content: center;
     }
     #about > p {
+        width: var(--width-desktop);
         text-align: start;
     }
 }

@@ -1,5 +1,5 @@
-#about > p { 
-    width: 320px;
+#about > p {
+    padding: 20px;
     color: var(--white);
     text-align: justify;
     text-justify: auto;

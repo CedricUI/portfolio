@@ -8,6 +8,7 @@ const btnProjects = domElement.btnProjects
 
 
 export const projects = [
+    { link:"https://github.com/CedricUI/make-your-game", title:"Make your game", image:"https://static.wikia.nocookie.net/ssb/images/c/ca/Bomberman.png/revision/latest?cb=20220510092204", description:"Ce projet contient une version légère du jeu Bomberman avec déplacement, pose de bombes, explosions et ennemis.", languages:["HTML", "CSS", "JS"]},
     { link:"https://github.com/CedricUI/forum", title:"Forum", image:"asset/video/forum.gif", description:"Forum web développé en Go avec SQLite, intégrant authentification, posts, commentaires, likes/dislikes, filtres et conteneurisation Docker.", languages:["Go", "HTML", "CSS", "JS", "SQLite"]},
     { link:"https://github.com/CedricUI/lem-in", title:"Lem-in", image:"https://www.gifsanimes.com/data/media/183/fourmi-image-animee-0029.gif", description:"Simulation de colonie de fourmis en Go utilisant des algorithmes de recherche de chemin pour optimiser les déplacements dans un graphe.", languages:["Go"]},
     { link:"https://evreux-muay-thai-gym.fr/", title:"Site E-commerce WP", image:"asset/video/evreux-muya-thai.gif", description:"Site e-commerce WordPress dédié à la boxe thaï : achat de licences,Investigation, t-shirts et équipements sportifs en ligne.", languages:["WordPress"]}
@@ -45,12 +46,25 @@ for (let index = 0; index < projects.length ; index++) {
 
 flexSild.append(menu)
 
-const SLIDE_STEP = 531;
+let slideStep = 0;
+
+window.addEventListener("click", () => {
+    if (window.innerWidth < 1024) {
+        slideStep = 531;
+    } else {
+        slideStep = 431;
+    }
+});
+// if (window.innerWidth < 1024) {
+//    slideStep = 531;
+// } else {
+//     slideStep = 431;
+// }
 
 const attachSlideButton = (button, index, container) => {
     button.addEventListener("click", () => {
         container.scrollTo({
-            left: SLIDE_STEP * index,
+            left: slideStep * index,
             behavior: "smooth"
         });
     });
