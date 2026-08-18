@@ -4,7 +4,7 @@ import { infoBulle } from './scripts/maintenance.js'
 import { effect } from './scripts/effects/effect.js'
 import { projects} from './scripts/slids.js'
 import { skills } from './scripts/skills.js'
-// import { softLi } from './scripts/soft.js'
+import { softLi } from './scripts/soft.js'
 
 // import { launchStars } from "./scripts/aniamtion/shootingStar.js";
 
